@@ -1,0 +1,74 @@
+[
+    {
+      "company": "Altimetrik India Pvt Ltd",
+      "companyLocation": "Chennai",
+      "companyCountry": "India",
+      "position": "Staff Engineer",
+      "current": true,
+      "date": { "from": "2021-05-18", "to": "Present" },
+      "workSummary": [
+        "Worked on various components like scores, deployment table, and deployment failure sections for a reporting tool by embedding reliability team (ESRE).",
+        "Handled the chart section of a reporting tool using HighchartJS.",
+        "Created prototypes for reporting tool and chaos tool using UXPin (React) and Figma (Clarity Design).",
+        "Built custom tables inclusive of sorting, filtering, pagination, CRUD operations, and security measures."
+      ],
+      "techSkills": ["React", "HighchartJS", "UXPin", "Figma", "Clarity Design", "JavaScript", "Security"]
+    },
+    {
+      "company": "Genesys Telecom Labs",
+      "companyLocation": "Chennai",
+      "companyCountry": "India",
+      "position": "Technical Lead",
+      "current": false,
+      "date": { "from": "2019-04-15", "to": "2021-05-17" },
+      "workSummary": [
+        "Led frontend development for a cross-platform Chat App (2 versions) developed with pure JavaScript (v1) and React with Material UI (v2).",
+        "Ensured security compliance for the app with Blackduck.",
+        "Implemented WCAG modules to enhance accessibility for specially-abled users."
+      ],
+      "techSkills": ["JavaScript", "React", "Material UI", "Blackduck", "WCAG"]
+    },
+    {
+      "company": "Freshworks Inc",
+      "companyLocation": "Chennai",
+      "companyCountry": "India",
+      "position": "Software Engineer - Frontend",
+      "current": false,
+      "date": { "from": "2016-06-08", "to": "2019-04-12" },
+      "workSummary": [
+        "Developed and maintained the website and web app for Freshsales (a CRM product).",
+        "Established coding guidelines for HTML and CSS, implemented with linters.",
+        "Built various components in the app based on EmberJS, and added integration support for Trello and Docusign."
+      ],
+      "techSkills": ["HTML", "CSS", "EmberJS", "Trello", "Docusign", "JavaScript"]
+    },
+    {
+      "company": "Tringapps Research Labs Pvt Ltd",
+      "companyLocation": "Chennai",
+      "companyCountry": "India",
+      "position": "Senior Software Developer - Web",
+      "current": false,
+      "date": { "from": "2014-11-14", "to": "2016-05-13" },
+      "workSummary": [
+        "Created patterned responsive websites with SEO support for multiple product sites.",
+        "Implemented materialistic themes across product sites.",
+        "Developed plugins for infinite scroll, modals, sliders, alerts, and paginations.",
+        "Integrated various HTML5 APIs into applications."
+      ],
+      "techSkills": ["HTML5", "CSS3", "JavaScript", "SEO", "Material Design", "Responsive Design"]
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "companyLocation": "Chennai",
+      "companyCountry": "India",
+      "position": "Systems Engineer",
+      "current": false,
+      "date": { "from": "2012-08-30", "to": "2014-11-13" },
+      "workSummary": [
+        "Developed web applications for United Airlines using MVC Architecture.",
+        "Coded applications using JavaScript, KnockoutJS, AmplifyJS, and RequireJS."
+      ],
+      "techSkills": ["JavaScript", "KnockoutJS", "AmplifyJS", "RequireJS", "MVC Architecture"]
+    }
+  ]
+  

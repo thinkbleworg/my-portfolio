@@ -1,0 +1,143 @@
+/* experience.css */
+
+.experience-section {
+  background-color: var(--secondary-color);
+  padding: 4rem 1rem;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Vertical Center Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timeline-item {
+  width: 50%;
+  position: relative;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-content-wrapper {
+  position: relative;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+/* ✅ The actual Dot */
+.timeline-dot {
+  position: absolute;
+  top: 2rem;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-dot.active {
+  background-color: var(--primary-color);
+}
+
+.timeline-item.left .timeline-dot {
+  right: -8px;
+}
+
+.timeline-item.right .timeline-dot {
+  left: -8px;
+}
+
+.experience-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+.experience-card h4 {
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--subtext-color);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-card ul {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.experience-card li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.tech-skills {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--subtext-color);
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+
+  .timeline-item.right .timeline-dot,
+  .timeline-item.left .timeline-dot {
+    left: 16px;
+    right: auto;
+  }  
+}

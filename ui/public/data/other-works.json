@@ -1,0 +1,13 @@
+[
+    {
+      "title": "Video Player Plugin",
+      "description": "Developed a video player plugin similar to YouTube using pure JavaScript (ES6), supporting MP4 playback.",
+      "tech_skills": ["JavaScript", "ES6"]
+    },
+    {
+      "title": "Expense Monitoring Tool",
+      "description": "Created an expense monitoring tool using ReactJS and AWS for data storage.",
+      "tech_skills": ["ReactJS", "AWS"]
+    }
+  ]
+  
