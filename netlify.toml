@@ -1,8 +1,8 @@
 [build]
   # Build settings for your frontend
   base = "ui"
-  command = "npm run build"
-  publish = "dist"
+  command = "npm --prefix ui run build"
+  publish = "ui/dist"
 
 [functions]
   # The location of your backend serverless functions
