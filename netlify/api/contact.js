@@ -1,15 +1,15 @@
 // server/api/contact.js
-const serverless = require("serverless-http");
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const nodemailer = require("nodemailer");
+import serverless from "serverless-http";
+import express, { json } from "express";
+import cors from "cors";
+import { config } from "dotenv";
+import { createTransport } from "nodemailer";
 
-dotenv.config();
+config();
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
 // Health-check route
 app.get("/", (req, res) => {
@@ -25,7 +25,7 @@ app.post("/contact", async (req, res) => {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
+    const transporter = createTransport({
       service: "yahoo",
       auth: {
         user: process.env.EMAIL_USER,
@@ -53,5 +53,4 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-// Export handler
-module.exports.handler = serverless(api);
+export const handler = serverless(api);
