@@ -37,6 +37,10 @@ app.post("/contact", async (req, res) => {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS,
           },
+          // Set a connection timeout (in milliseconds)
+          connectionTimeout: 5000,
+          // Optionally set a greeting timeout
+          greetingTimeout: 5000,
         });
     
         const mailOptions = {
