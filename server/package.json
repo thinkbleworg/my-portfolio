@@ -4,8 +4,8 @@
   "main": "api/contact.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node expressApp.js",
+    "dev": "nodemon expressApp.js"
   },
   "keywords": [],
   "author": "",
