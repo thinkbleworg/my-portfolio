@@ -1,5 +1,4 @@
 // server/api/contact.js
-
 const serverless = require("serverless-http");
 const express = require("express");
 const cors = require("cors");
@@ -55,4 +54,4 @@ app.post("/contact", async (req, res) => {
 });
 
 // Export handler
-module.exports.handler = serverless(app);
+module.exports.handler = serverless(api);
