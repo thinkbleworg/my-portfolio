@@ -8,5 +8,8 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:8888' // when running netlify dev
     }
+  },
+  optimizeDeps: {
+    exclude: ["express", "cors", "nodemailer", "dotenv", "serverless-http"]
   }
 })

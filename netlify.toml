@@ -6,7 +6,7 @@
 
 [functions]
   # The location of your backend serverless functions
-  directory = "../server/api"
+  directory = "server/api"
   node_bundler = "esbuild"
   external_node_modules = ["express", "cors", "dotenv", "nodemailer", "serverless-http"]
 
