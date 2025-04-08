@@ -31,6 +31,7 @@ export default async function handler(req, res) {
     };
 
     console.log("Receiver Email:", process.env.RECEIVER_EMAIL);
+    console.log("mailOptions", mailOptions);
 
     await transporter.sendMail(mailOptions);
     return res.status(200).json({ message: "Email sent successfully" });
