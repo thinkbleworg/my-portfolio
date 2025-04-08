@@ -1,2 +1,4 @@
 /ui/.gitignore
 /server/.gitignore
+# Local Netlify folder
+.netlify

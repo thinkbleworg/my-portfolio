@@ -2,11 +2,12 @@
   # Build settings for your frontend
   base = "ui"
   command = "npm run build"
-  publish = "dist"
+  publish = "ui/dist"
 
 [functions]
   # The location of your backend serverless functions
-  directory = "server/api"
+  directory = "../server/api"
+  node_bundler = "esbuild"
 
 [[redirects]]
   # Redirect /api/* requests to the Netlify functions
