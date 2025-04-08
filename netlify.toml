@@ -1,0 +1,15 @@
+[build]
+  # Build settings for your frontend
+  base = "ui"
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  # The location of your backend serverless functions
+  directory = "server/api"
+
+[[redirects]]
+  # Redirect /api/* requests to the Netlify functions
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
