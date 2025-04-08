@@ -1,11 +1,11 @@
 // server/api/contact.js
-import serverless from "serverless-http";
-import express, { json } from "express";
-import cors from "cors";
-import { config } from "dotenv";
-import { createTransport } from "nodemailer";
+const express = require("express");
+const serverless = require("serverless-http");
+const cors = require("cors");
+const nodemailer = require("nodemailer");
+const dotenv = require("dotenv");
 
-config();
+dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -25,7 +25,7 @@ app.post("/contact", async (req, res) => {
   }
 
   try {
-    const transporter = createTransport({
+    const transporter = nodemailer.createTransport({
       service: "yahoo",
       auth: {
         user: process.env.EMAIL_USER,
@@ -53,4 +53,4 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-export const handler = serverless(api);
+module.exports.handler = serverless(app);
