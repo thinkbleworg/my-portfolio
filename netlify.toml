@@ -5,7 +5,7 @@
   functions = "../netlify/functions"
 
 [dev]
-  command = "cd ui && npm run dev" # Command to run your frontend dev server
+  command = "npm run dev --prefix ui" # Command to run your frontend dev server
   port = 8888 # Port where Netlify Dev server runs (default)
   targetPort = 5173 # Port where your Vite dev server is running
   autoLaunch = false
