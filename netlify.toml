@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build --prefix ui"
   publish = "ui/dist"
 
 [functions]
