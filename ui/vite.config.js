@@ -7,13 +7,14 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8888/.netlify/functions', // Adjust if your local Netlify Dev port is different
+        target: 'http://localhost:8888', // Adjust if your local Netlify Dev port is different
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        rewrite: (path) => path.replace(/^\/api/, '/.netlify/functions')
       },
     },
   },
   build: {
     outDir: 'dist', // Output directory for Netlify
-  },
+    sourcemap: true
+  }
 })

@@ -1,13 +1,13 @@
 [build]
-  publish = "dist"  # Or "ui/build" depending on your Vite build output
-  functions = "../netlify/functions"
+  publish = "ui/dist"  # Or "ui/build" depending on your Vite build output
+  functions = "netlify/functions"
   base="ui"
 
 [dev]
-  command = "npm run dev --prefix ui" # Command to run your frontend dev server
-  framework = "#custom"
+  command = "npm run dev" # Command to run your frontend dev server
   port = 8888 # Port where Netlify Dev server runs (default)
   targetPort = 5173 # Port where your Vite dev server is running
+  autoLaunch = false
 
 [[redirects]]
   from = "/api/contact"
