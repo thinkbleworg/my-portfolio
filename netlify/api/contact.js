@@ -1,24 +1,11 @@
-// server/api/contact.js
-const express = require("express");
-const serverless = require("serverless-http");
-const cors = require("cors");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 
 dotenv.config();
 
-const app = express();
-app.use(cors());
-app.use(json());
-
-// Health-check route
-app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
-});
-
-// Contact form route
-app.post("/contact", async (req, res) => {
-  const { name, email, message } = req.body;
+const handler = async(event) => {
+  const { name, email, message } = JSON.parse(event.body).payload.data;
+  console.log(`name: ${name}, email: ${email}, message: ${message}`);
 
   if (!name || !email || !message) {
     return res.status(400).json({ message: "All fields are required" });
@@ -51,6 +38,6 @@ app.post("/contact", async (req, res) => {
       error: error.toString(),
     });
   }
-});
+};
 
-module.exports.handler = serverless(app);
+module.exports = { handler };
