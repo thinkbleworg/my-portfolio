@@ -1,6 +1,7 @@
 [build]
   publish = "ui/dist"  # Or "ui/build" depending on your Vite build output
   functions = "netlify/functions"
+  base = "" # Explicitly set the base directory to the root
 
 [dev]
   command = "npm run dev --prefix ui" # Command to run your frontend dev server
