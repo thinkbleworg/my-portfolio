@@ -1,5 +1,5 @@
 [build]
-  publish = "ui/dist"  # Or "ui/build" depending on your Vite build output
+  publish = "netlify/functions/ui-build"  # Or "ui/build" depending on your Vite build output
   functions = "netlify/functions"
   base = "" # Explicitly set the base directory to the root
 
