@@ -8,6 +8,6 @@
   "scripts": {
     "install-all": "npm install && cd ui && npm install",
     "dev": "npm run dev --prefix ui",
-    "build": "cd ui && npm run build"
+    "build": "npm run build --prefix ui"
   }
 }
