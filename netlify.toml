@@ -1,8 +1,9 @@
 [build]
-  base = "ui"
-  publish = "dist"
-  command = "npm run build"
-  functions = "../netlify/functions"
+  command = "npm run build --prefix ui"
+  publish = "ui/dist"
+
+[functions]
+  directory = "netlify/functions"
 
 [dev]
   command = "npm run dev --prefix ui"
