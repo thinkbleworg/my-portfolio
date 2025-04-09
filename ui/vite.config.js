@@ -14,6 +14,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../netlify/functions/ui-build', // Output directory for Netlify
-  }
+    outDir: 'dist', // Output directory for Netlify
+  },
 })
