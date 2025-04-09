@@ -5,9 +5,9 @@
   functions = "../netlify/functions"
 
 [dev]
-  command = "npm run dev --prefix ui" # Command to run your frontend dev server
-  port = 8888 # Port where Netlify Dev server runs (default)
-  targetPort = 5173 # Port where your Vite dev server is running
+  command = "npm run dev --prefix ui"
+  port = 8888 
+  targetPort = 5173 
   autoLaunch = false
 
 [[redirects]]
@@ -18,9 +18,4 @@
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"      # SPA fallback
   status = 200

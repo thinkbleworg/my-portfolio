@@ -16,5 +16,6 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Output directory for Netlify
     sourcemap: true
-  }
+  },
+  root: '.',  // Ensure Vite treats ui/ as the root
 })
