@@ -6,10 +6,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:8888' // when running netlify dev
-    }
+      '/api': {
+        target: 'http://localhost:8888/.netlify/functions', // Adjust if your local Netlify Dev port is different
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
   },
-  optimizeDeps: {
-    exclude: ["express", "cors", "nodemailer", "dotenv", "serverless-http"]
-  }
+  build: {
+    outDir: '../netlify/functions/ui-build', // Output directory for Netlify
+  },
 })
