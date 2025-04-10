@@ -19,6 +19,10 @@
   --timeline-line-color: #444;
 }
 
+html {
+  scroll-padding-top: 65px; /* or match your navbar height */
+}
+
 * {
   margin: 0;
   padding: 0;
