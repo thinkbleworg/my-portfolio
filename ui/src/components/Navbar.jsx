@@ -4,6 +4,8 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { ThemeContext } from "../context/ThemeContext";
 import "../styles/navbar.css";
 
+const sections = ["home", "about", "experience", "skills", "certifications", "contact"];
+
 const Navbar = ({ name }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +23,6 @@ const Navbar = ({ name }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "experience", "skills", "contact"];
       const scrollY = window.scrollY;
 
       for (const section of sections) {
@@ -52,7 +53,7 @@ const Navbar = ({ name }) => {
 
       <div className="navbar-controls">
         <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
-          {["home", "about", "experience", "skills", "contact"].map(
+          {sections.map(
             (section) => (
               <li
                 key={section}

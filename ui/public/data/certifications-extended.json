@@ -1,0 +1,70 @@
+[
+    {
+      "title": "Microsoft Certification - Programming in HTML5, CSS3, and JavaScript",
+      "badge": "/certs/logo/microsoft.png",
+      "pdf": "/certs/Salesforce Certification.pdf",
+      "date": "May 2013"
+    },
+    {
+      "title": "NodeJS Developer - Coursera",
+      "badge": "/certs/logo/nodejs-developer.png",
+      "pdf": "/certs/NodeJS Developer.pdf",
+      "date": "Feb 2025"
+    },
+
+    {
+      "title": "ReactJS Developer - Coursera",
+      "badge": "/certs/logo/reactjs-developer.png",
+      "pdf": "/certs/ReactJS Developer.pdf",
+      "date": "Mar 2025"
+    },
+
+    {
+      "title": "Modern JavaScript with ES6 - Packt",
+      "badge": "/certs/logo/packt.png",
+      "pdf": "/certs/Coursera - Modern JavaScript with ES6.pdf",
+      "date": "Mar 2025"
+    },
+
+    {
+      "title": "Typescript in React: Get started - Coursera Project Network",
+      "badge": "/certs/logo/coursera-projectnetwork.png",
+      "pdf": "/certs/Coursera - Typescript in React.pdf",
+      "date": "Mar 2025"
+    },
+
+    {
+      "title": "Developing Front-End Apps with React - IBM",
+      "badge": "/certs/logo/IBM_Cert.png",
+      "pdf": "/certs/Coursera - Developing Front-End Apps with React.pdf",
+      "date": "Mar 2025"
+    },
+
+    {
+      "title": "Unit Testing in React.js: Create a Unit Test Suite - Coursera",
+      "badge": "/certs/logo/coursera-projectnetwork.png",
+      "pdf": "/certs/Coursera - Unit Testing in React.js.pdf",
+      "date": "Mar 2025"
+    },
+
+    {
+      "title": "Node.js & MongoDB: Developing Back-end Database Applications - IBM",
+      "badge": "/certs/logo/IBM_Cert.png",
+      "pdf": "/certs/Coursera - Node.js & MongoDB.pdf",
+      "date": "Feb 2025"
+    },
+
+    {
+      "title": "Developing Back-End Apps with Node.js and Express - IBM",
+      "badge": "/certs/logo/IBM_Cert.png",
+      "pdf": "/certs/Coursera - Developing Back-End.pdf",
+      "date": "Mar 2025"
+    },
+
+    {
+      "title": "Salesforce Certified Javascript Developer I - Salesforce" ,
+      "badge": "/certs/logo/Salesforce Javascript.png",
+      "pdf": "/certs/Salesforce Certification.pdf",
+      "date": "Mar 2025"
+    }
+  ]

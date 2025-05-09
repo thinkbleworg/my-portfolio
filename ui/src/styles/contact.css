@@ -1,7 +1,7 @@
 /* contact.css */
 
 .contact-section {
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color);
   padding: 4rem 1rem;
   color: var(--text-color);
 }

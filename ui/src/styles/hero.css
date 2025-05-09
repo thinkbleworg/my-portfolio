@@ -19,7 +19,21 @@
   flex-wrap: wrap; /* ensures responsive stacking on small screens */
 }
 
-.hero-image img {
+.hero-image {
+  position: relative;
+}
+
+.badge-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.hero-image img:first-child {
   width: 200px;
   height: 200px;
   border-radius: 50%;

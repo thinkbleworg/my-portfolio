@@ -8,6 +8,7 @@ const Hero = ({ aboutData }) => {
       <div className="hero-container">
         <div className="hero-image">
           <img src="/images/profile-pic.jpg" alt="Profile" />
+          <img src="/certs/logo/Salesforce Javascript.png" alt="Salesforce Badge" className="badge-overlay" />
         </div>
         <div className="hero-content">
           <h1>{aboutData.name}</h1>

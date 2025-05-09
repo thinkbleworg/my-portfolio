@@ -1,7 +1,26 @@
-[
+  [
     {
-      "certification": "Microsoft Certification - Programming in HTML5, CSS3, and JavaScript",
+      "title": "Microsoft Certification - Programming in HTML5, CSS3, and JavaScript",
+      "badge": "/certs/logo/microsoft.png",
+      "pdf": "/certs/Salesforce Certification.pdf",
       "date": "May 2013"
+    },
+    {
+      "title": "NodeJS Developer - Coursera",
+      "badge": "/certs/logo/nodejs-developer.png",
+      "pdf": "/certs/NodeJS Developer.pdf",
+      "date": "Feb 2025"
+    },
+    {
+      "title": "ReactJS Developer - Coursera",
+      "badge": "/certs/logo/reactjs-developer.png",
+      "pdf": "/certs/ReactJS Developer.pdf",
+      "date": "Mar 2025"
+    },
+    {
+      "title": "Salesforce Certified Javascript Developer I - Salesforce",
+      "badge": "/certs/logo/Salesforce Javascript.png",
+      "pdf": "/certs/Salesforce Certification.pdf",
+      "date": "Mar 2025"
     }
   ]
-  
